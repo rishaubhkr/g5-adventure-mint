@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1A2F23;
+  --color-accent: #E67E22;
+  --color-light: #F5F5F5;
+  --color-dark: #0A0F0D;
+  --color-whatsapp: #25D366;
+  
+  --font-oswald: var(--font-oswald);
+  --font-inter: var(--font-inter);
+}
+
+@layer base {
+  :root {
+    --background: #0A0F0D;
+    --foreground: #F5F5F5;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-inter), sans-serif;
+    /* Fluid body text */
+    font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.125rem);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-oswald), sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  h1 { font-size: clamp(3rem, 2rem + 5vw, 9rem); }
+  h2 { font-size: clamp(2.5rem, 1.5rem + 4vw, 7rem); }
+  h3 { font-size: clamp(1.75rem, 1.25rem + 2vw, 4rem); }
+
+  /* Tactical HUD Scrollbar (Option B) */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0A0F0D;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #E67E22;
+    border-radius: 0px;
+    border: 1px solid #0A0F0D;
+    transition: all 0.3s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #F39C12;
+    width: 8px;
+  }
+
+  /* Standard Scrollbar Support */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #E67E22 #0A0F0D;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 bg-accent text-light font-bold text-lg hover:bg-white hover:text-dark transition-all duration-300 inline-flex items-center gap-2;
+  }
+  
+  .btn-whatsapp {
+    @apply px-6 py-3 bg-whatsapp text-white font-bold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 flex items-center gap-2;
+  }
+
+  .glass-card {
+    @apply bg-white/5 border border-white/10 backdrop-blur-md;
+  }
+
+  .forest-gradient {
+    background: linear-gradient(180deg, rgba(26, 47, 35, 0.5) 0%, rgba(10, 15, 13, 0.8) 100%);
+  }
+
+  .content-max-width {
+    @apply max-w-[70ch] mx-auto;
+  }
+}
+
+@layer utilities {
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 40s linear infinite;
+  }
+
+  .animate-slow-zoom {
+    animation: slow-zoom 20s ease-in-out infinite alternate;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-marquee, .animate-slow-zoom {
+      animation: none !important;
+    }
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes slow-zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}

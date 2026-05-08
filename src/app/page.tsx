@@ -1,0 +1,47 @@
+import Hero from "@/components/Hero";
+import Packages from "@/components/Packages";
+import Reviews from "@/components/Reviews";
+import FAQ from "@/components/FAQ";
+import Heritage from "@/components/Heritage";
+import Multiverse from "@/components/Multiverse";
+import Pulse from "@/components/Pulse";
+import Extreme from "@/components/Extreme";
+import Basecamp from "@/components/Basecamp";
+import Tactical from "@/components/Tactical";
+import Lifestyle from "@/components/Lifestyle";
+import TourPackages from "@/components/TourPackages";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen">
+      <Hero />
+      
+      {/* Trust Bar (Marquee) */}
+      <div className="bg-accent py-4 overflow-hidden whitespace-nowrap">
+        <div className="flex animate-marquee gap-12 text-light font-oswald text-sm tracking-widest uppercase items-center">
+          {[...Array(5)].map((_, i) => (
+            <div key={i} className="flex gap-12 items-center">
+              <span>• G5 Adventure Mint</span>
+              <span>• 4.5★ Google Rating</span>
+              <span>• 2,014+ Reviews</span>
+              <span>• Asia&apos;s Highest Jumps</span>
+              <span>• Certified Jump Masters</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <Heritage />
+      <TourPackages />
+      <Packages />
+      <Extreme />
+      <Tactical />
+      <Basecamp />
+      <Lifestyle />
+      <Multiverse />
+      <Pulse />
+      <Reviews />
+      <FAQ />
+    </main>
+  );
+}
