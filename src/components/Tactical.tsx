@@ -28,6 +28,7 @@ export default function Tactical() {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
             >
               <span className="text-accent font-oswald text-sm tracking-[0.5em] uppercase mb-6 block">
                 Combat Zone
@@ -82,6 +83,7 @@ export default function Tactical() {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
               className="hidden lg:block relative aspect-square bg-dark border border-white/5 p-12 overflow-hidden"
             >
               <div className="absolute top-0 left-0 w-full h-full bg-accent/5 pointer-events-none" />

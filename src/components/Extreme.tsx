@@ -44,6 +44,7 @@ export default function Extreme() {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
@@ -158,6 +159,7 @@ export default function Extreme() {
              <motion.span 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               className="text-accent font-oswald text-sm tracking-[0.5em] uppercase mb-4 block"
             >
               Engagement Rates
@@ -203,7 +205,7 @@ export default function Extreme() {
                 target="_blank"
                 className="mt-16 w-full py-5 bg-accent text-light font-oswald text-sm tracking-[0.2em] uppercase flex items-center justify-center gap-3 hover:bg-white hover:text-dark transition-all shadow-lg shadow-accent/20"
               >
-                Engage Combo Package <ArrowRight className="w-4 h-4" />
+                Book Combo Package <ArrowRight className="w-4 h-4" />
               </a>
               
               <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-accent opacity-5 rounded-full blur-3xl pointer-events-none" />

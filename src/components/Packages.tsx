@@ -66,6 +66,7 @@ export default function Packages() {
           <motion.span 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
             className="text-accent font-oswald text-sm tracking-[0.5em] uppercase mb-4 block"
           >
             Tactical Operations
@@ -82,7 +83,6 @@ export default function Packages() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
               viewport={{ once: true }}
-              id={`rafting-${pkg.name.toLowerCase().replace(/\s+/g, '-')}`}
               className={`relative flex flex-col p-8 border border-white/10 glass-card group hover:border-accent transition-colors ${pkg.featured ? 'ring-1 ring-accent bg-accent/5' : ''}`}
             >
               {pkg.featured && (
@@ -109,7 +109,7 @@ export default function Packages() {
                   <div className="text-4xl font-oswald flex items-baseline gap-1">
                     <span className="text-xl text-accent">₹</span>
                     <span className="text-white">{pkg.price}</span>
-                    <span className="text-[10px] uppercase tracking-widest text-light/30 ml-1">/ unit</span>
+                    <span className="text-[10px] uppercase tracking-widest text-light/30 ml-1">/ person</span>
                   </div>
                 </div>
               </div>

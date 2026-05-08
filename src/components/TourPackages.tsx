@@ -190,8 +190,7 @@ export default function TourPackages() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 whileHover={{ y: -5 }}
-                viewport={{ once: true }}
-                id={`stay-${plan.id}`}
+                transition={{ duration: 0.3 }}
                 className={`p-10 border ${plan.featured ? 'border-accent bg-accent/5' : 'border-white/10 bg-white/5'} relative overflow-hidden group glass-card`}
               >
                 {plan.featured && <div className="absolute top-0 right-0 bg-accent text-light text-[10px] uppercase font-oswald tracking-widest px-4 py-1">Best Value</div>}

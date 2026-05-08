@@ -105,6 +105,11 @@
       animation: none !important;
     }
   }
+
+  .section-optimized {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 500px;
+  }
 }
 
 @keyframes marquee {

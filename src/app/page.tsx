@@ -32,18 +32,18 @@ export default function Home() {
         </div>
       </div>
 
-      <Heritage />
-      <TourPackages />
-      <Packages />
-      <Extreme />
-      <Tactical />
-      <Basecamp />
-      <Lifestyle />
-      <Multiverse />
-      <Pulse />
-      <FollowUs />
-      <Reviews />
-      <FAQ />
+      <div className="section-optimized"><Heritage /></div>
+      <div className="section-optimized"><TourPackages /></div>
+      <div className="section-optimized"><Packages /></div>
+      <div className="section-optimized"><Extreme /></div>
+      <div className="section-optimized"><Tactical /></div>
+      <div className="section-optimized"><Basecamp /></div>
+      <div className="section-optimized"><Lifestyle /></div>
+      <div className="section-optimized"><Multiverse /></div>
+      <div className="section-optimized"><Pulse /></div>
+      <div className="section-optimized"><FollowUs /></div>
+      <div className="section-optimized"><Reviews /></div>
+      <div className="section-optimized"><FAQ /></div>
     </main>
   );
 }

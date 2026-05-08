@@ -35,6 +35,7 @@ export default function Lifestyle() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="relative aspect-[4/3] group overflow-hidden border border-white/5 glass-card"
           >
@@ -56,6 +57,7 @@ export default function Lifestyle() {
             <motion.span 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               className="text-accent font-oswald text-sm tracking-[0.5em] uppercase mb-6 block"
             >
               Nature Exploration
@@ -156,6 +158,7 @@ export default function Lifestyle() {
             <motion.h4 
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
               className="text-accent font-oswald text-xs tracking-[0.5em] uppercase mb-10"
             >
               Cultural Landmark Hub

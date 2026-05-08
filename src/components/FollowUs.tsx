@@ -33,6 +33,7 @@ export default function FollowUs() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="mb-6 flex items-center gap-3 text-accent font-oswald text-sm tracking-[0.4em] uppercase"
           >
@@ -44,6 +45,7 @@ export default function FollowUs() {
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-6xl md:text-8xl font-oswald mb-12 tracking-tighter leading-[0.9]"
           >
@@ -54,6 +56,7 @@ export default function FollowUs() {
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-light/40 max-w-xl text-lg mb-16 leading-relaxed"
           >
@@ -65,6 +68,7 @@ export default function FollowUs() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <a
