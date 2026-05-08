@@ -62,7 +62,7 @@ export default function Header() {
               target="_blank"
               className="hidden sm:flex bg-accent text-light px-8 py-2.5 text-[10px] uppercase tracking-[0.3em] font-oswald hover:bg-white hover:text-dark transition-all border border-accent hover:border-white shadow-lg shadow-accent/20"
             >
-              Engage Target
+              Book Now
             </a>
 
             {/* Hamburger Trigger */}

@@ -131,7 +131,7 @@ export default function Packages() {
                     : 'bg-white text-dark hover:bg-accent hover:text-light'
                 }`}
               >
-                Engage Target <ArrowRight className="w-3 h-3" />
+                Start Mission <ArrowRight className="w-3 h-3" />
               </a>
             </motion.div>
           ))}

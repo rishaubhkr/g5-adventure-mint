@@ -47,7 +47,7 @@ export default function Schema() {
     ],
     "sameAs": [
       "https://www.facebook.com/g5adventure",
-      "https://www.instagram.com/g5adventure"
+      "https://www.instagram.com/rafting_camping_32"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",

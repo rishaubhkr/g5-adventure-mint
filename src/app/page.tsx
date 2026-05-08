@@ -10,6 +10,7 @@ import Basecamp from "@/components/Basecamp";
 import Tactical from "@/components/Tactical";
 import Lifestyle from "@/components/Lifestyle";
 import TourPackages from "@/components/TourPackages";
+import FollowUs from "@/components/FollowUs";
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
       <Lifestyle />
       <Multiverse />
       <Pulse />
+      <FollowUs />
       <Reviews />
       <FAQ />
     </main>
