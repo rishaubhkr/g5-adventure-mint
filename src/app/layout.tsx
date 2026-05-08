@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import Schema from "@/components/Schema";
+import MissionWizard from "@/components/MissionWizard";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -94,6 +95,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${oswald.variable} antialiased pt-20 bg-dark`}>
         <Header />
         {children}
+        <MissionWizard />
         <Footer />
         <WhatsAppCTA />
       </body>

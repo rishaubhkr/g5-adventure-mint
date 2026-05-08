@@ -82,6 +82,7 @@ export default function Packages() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
               viewport={{ once: true }}
+              id={`rafting-${pkg.name.toLowerCase().replace(/\s+/g, '-')}`}
               className={`relative flex flex-col p-8 border border-white/10 glass-card group hover:border-accent transition-colors ${pkg.featured ? 'ring-1 ring-accent bg-accent/5' : ''}`}
             >
               {pkg.featured && (
