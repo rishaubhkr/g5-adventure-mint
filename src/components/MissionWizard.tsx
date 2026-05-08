@@ -75,7 +75,7 @@ export default function MissionWizard() {
       {/* Floating Toggle Button */}
       <button
         onClick={handleToggle}
-        className="fixed bottom-8 right-8 z-50 w-16 h-16 bg-accent rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(230,126,34,0.5)] border-2 border-white/20 hover:scale-110 transition-transform group"
+        className="fixed bottom-28 right-8 z-50 w-16 h-16 bg-accent rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(230,126,34,0.5)] border-2 border-white/20 hover:scale-110 transition-transform group"
         aria-label="Toggle Mission Control"
       >
         <AnimatePresence mode="wait">
