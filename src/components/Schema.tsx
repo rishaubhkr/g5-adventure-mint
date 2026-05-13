@@ -61,6 +61,13 @@ export default function Schema() {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
+                "name": "9KM Short Rafting"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
                 "name": "16KM Rafting Expedition"
               }
             },
@@ -69,6 +76,13 @@ export default function Schema() {
               "itemOffered": {
                 "@type": "Service",
                 "name": "26KM Extreme Rafting"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "35KM Pro Rafting"
               }
             }
           ]

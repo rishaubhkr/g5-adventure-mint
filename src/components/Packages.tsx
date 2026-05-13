@@ -2,53 +2,45 @@
 
 import { motion } from "framer-motion";
 import { Check, Waves, MapPin, ArrowRight } from "lucide-react";
+import MedicalDisclaimer from "./MedicalDisclaimer";
 
 const packages = [
   {
-    name: "Brahmpuri to NIM Beach",
+    name: "Club House to Neem Beach",
     distance: "9 Kms",
-    price: "600",
-    originalPrice: "800",
-    features: ["Cliff Jumping", "Body Surfing", "Best for Children", "Easy Waves"],
+    weekdayPrice: "500",
+    weekendPrice: "800",
+    features: ["Body Surfing", "Cliff Jumping", "Office Pickup & Drop", "25% Token Deposit", "Online Booking Confirmed"],
     level: "Beginner",
     location: "Brahmpuri Sector"
   },
   {
-    name: "Brahmpuri to Rishikesh",
-    distance: "12 Kms",
-    price: "600",
-    originalPrice: "850",
-    features: ["Cliff Jumping", "Body Surfing", "Small Rapids", "Perfect for Families"],
-    level: "Beginner+",
-    location: "Lower Ganges"
-  },
-  {
-    name: "Shivpuri to Rishikesh",
-    distance: "18 Kms",
-    price: "1000",
-    originalPrice: "1400",
-    features: ["Thrilling Rapids", "Cliff Jumping", "Most Popular", "High Energy"],
+    name: "Shivpuri to Neem Beach",
+    distance: "16 Kms",
+    weekdayPrice: "800",
+    weekendPrice: "1000",
+    features: ["Body Surfing", "Cliff Jumping", "Office Pickup & Drop", "25% Token Deposit", "Online Booking Confirmed"],
     level: "Intermediate",
     location: "Shivpuri Sector",
     featured: true
   },
   {
     name: "Marine Drive to Rishikesh",
-    distance: "24 Kms",
-    price: "1500",
-    originalPrice: "2000",
-    features: ["Big Grade Rapids", "Professional Gear", "Lunch Included", "Elite Experience"],
+    distance: "26 Kms",
+    weekdayPrice: "1000",
+    weekendPrice: "1200",
+    features: ["Body Surfing", "Cliff Jumping", "Office Pickup & Drop", "25% Token Deposit", "Online Booking Confirmed"],
     level: "Advanced",
     location: "Marine Drive Area"
   },
   {
     name: "Kaudiyala to Rishikesh",
-    distance: "36 Kms",
-    price: "2500",
-    originalPrice: "3500",
-    features: ["Extreme Rapids", "Wall Street Rapid", "Full Day Trip", "Adrenaline Pro"],
+    distance: "35 Kms",
+    weekdayPrice: "2500",
+    weekendPrice: "3000",
+    features: ["Min 8 Persons Required", "Body Surfing", "Cliff Jumping", "Office Pickup & Drop", "Online Booking Confirmed"],
     level: "Expert",
-    location: "Kodiyala Zone"
+    location: "Kaudiyala Zone"
   }
 ];
 
@@ -59,7 +51,7 @@ export default function Packages() {
         {/* SEO Summary for AI Chatbots */}
         <div className="sr-only" aria-hidden="true">
           <h3>G5 Adventure Rafting Stretches Summary</h3>
-          <p>We provide five major rafting stretches in Rishikesh: Brahmpuri (9km/12km), Shivpuri (18km), Marine Drive (24km), and Kaudiyala (36km). Levels range from Beginner to Expert. Key rapids include Wall Street. All packages include cliff jumping and body surfing.</p>
+          <p>We provide four major rafting stretches in Rishikesh: Club House/Brahmpuri (9km), Shivpuri (16km), Marine Drive (26km), and Kaudiyala (35km). Levels range from Beginner to Expert. All packages include cliff jumping, body surfing, and office pickup/drop. Online booking confirmed with 25% token deposit.</p>
         </div>
 
         <div className="mb-20">
@@ -69,13 +61,13 @@ export default function Packages() {
             viewport={{ once: true }}
             className="text-accent font-oswald text-sm tracking-[0.5em] uppercase mb-4 block"
           >
-            Tactical Operations
+            Rafting Operations
           </motion.span>
           <h2 id="rafting-stretches-title" className="font-oswald tracking-tighter leading-none mb-8 uppercase" style={{ fontSize: "clamp(3rem, 10vw, 6rem)" }}>RAFTING<br />STRETCHES</h2>
           <p className="text-light/40 text-xl max-w-xl italic border-l-2 border-accent pl-6">"Choose your battle on the Ganges. From calm family floats to legendary Grade IV rapids."</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           {packages.map((pkg, idx) => (
             <motion.div
               key={idx}
@@ -103,13 +95,19 @@ export default function Packages() {
                 </div>
               </div>
 
-              <div className="mb-8">
-                <div className="flex flex-col">
-                  <span className="text-light/20 line-through text-xs font-medium uppercase">₹{pkg.originalPrice}</span>
-                  <div className="text-4xl font-oswald flex items-baseline gap-1">
-                    <span className="text-xl text-accent">₹</span>
-                    <span className="text-white">{pkg.price}</span>
+              <div className="mb-8 space-y-3">
+                <div className="flex justify-between items-baseline border-b border-white/10 pb-3">
+                  <span className="text-xs uppercase tracking-widest text-light/60">Weekday Rate</span>
+                  <div className="text-3xl font-oswald text-white flex items-baseline gap-1">
+                    <span className="text-accent text-sm">₹</span>{pkg.weekdayPrice}
                     <span className="text-[10px] uppercase tracking-widest text-light/30 ml-1">/ person</span>
+                  </div>
+                </div>
+                <div className="flex justify-between items-baseline pt-1">
+                  <span className="text-xs uppercase tracking-widest text-accent">Weekend Rate</span>
+                  <div className="text-3xl font-oswald text-accent flex items-baseline gap-1">
+                    <span className="text-sm">₹</span>{pkg.weekendPrice}
+                    <span className="text-[10px] uppercase tracking-widest text-accent/50 ml-1">/ person</span>
                   </div>
                 </div>
               </div>
@@ -138,6 +136,7 @@ export default function Packages() {
           ))}
         </div>
       </div>
+      <MedicalDisclaimer />
     </section>
   );
 }

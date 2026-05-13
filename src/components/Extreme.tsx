@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Shield, Zap, History, Wrench, ArrowRight, Users, Target, Anchor } from "lucide-react";
+import { Shield, Zap, History, Wrench, ArrowRight, Users, Target, Anchor, AlertTriangle, Activity } from "lucide-react";
 
 const pricing = [
   { activity: "Bungy Jump", price: "3500", detail: "Per Person" },
