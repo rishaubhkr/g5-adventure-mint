@@ -11,7 +11,7 @@ export default function Schema() {
     "url": "https://rishikeshriverrafting.in",
     "logo": "https://rishikeshriverrafting.in/images/logo.png",
     "image": [
-      "https://rishikeshriverrafting.in/images/hero.png",
+      "https://rishikeshriverrafting.in/images/rafting-hero.png",
       "https://rishikeshriverrafting.in/images/rafting-main.png"
     ],
     "description": "G5 Adventure Mint is India's premier high-octane adventure hub in Rishikesh, specializing in white water rafting, highest bungee jumping, and specialized tactical basecamps.",

@@ -77,11 +77,13 @@ export default function Hero() {
         style={{ x: bgX, y: bgY }}
       >
         <Image
-          src="/images/hero.png"
+          src="/images/rafting-hero.png"
           alt="Official G5 Adventure Mint: Extreme white-water rafting on the Ganges river, Rishikesh, Uttarakhand, India"
           fill
           className="object-cover opacity-60 scale-110"
           priority
+          sizes="100vw"
+          quality={90}
         />
       </motion.div>
 

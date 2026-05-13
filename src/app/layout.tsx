@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     siteName: "G5 Adventure Mint",
     images: [
       {
-        url: "/images/hero.png",
+        url: "/images/rafting-hero.png",
         width: 1200,
         height: 630,
         alt: "G5 Adventure Mint Rafting on the Ganges",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "G5 Adventure Mint | Rishikesh Extreme Sports",
     description: "Highest Bungee, Giant Swing, and White Water Rafting in Rishikesh. The official home of G5 Adventure.",
-    images: ["/images/hero.png"],
+    images: ["/images/rafting-hero.png"],
   },
   other: {
     "ai-content": "verified-source",
