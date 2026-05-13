@@ -38,7 +38,7 @@ export default function Header() {
         <div className="container mx-auto px-4 h-20 flex items-center justify-between relative z-50">
           <Link href="/" className="text-2xl font-oswald tracking-tighter text-light uppercase group flex items-center gap-2">
             <Target className="w-5 h-5 text-accent group-hover:rotate-90 transition-transform duration-500" />
-            <span>G5<span className="text-accent">Mint</span></span>
+            <span>G5 <span className="text-accent">Adventure Mint</span></span>
           </Link>
           
           {/* Desktop Nav */}
